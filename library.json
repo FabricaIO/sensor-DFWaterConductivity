@@ -1,0 +1,57 @@
+{
+	"name": "Fabrica-IO Sensor DF Water Conductivity",
+	"version": "0.5.0",
+	"description": "Analog water electro conductivity and temperature sensor",
+	"keywords": "Fabrica-IO, sensor, water, analog",
+	"repository":
+	{
+	  "type": "git",
+	  "url": "https://github.com/FabricaIO/sensor-DFWaterConductivity.git"
+	},
+	"authors":
+	[
+	  {
+		"name": "Sam Groveman",
+		"email": "SamGroveman@outlook.com",
+		"url": "https://github.com/FabricaIO"
+	  }
+	],
+	"dependencies": {
+		"DFRobot_ECPRO": "https://github.com/cdjq/DFRobot_ECPRO"
+	  },
+	"license": "GPLv3",
+	"homepage": "https://github.com/FabricaIO",
+	"frameworks": "arduino",
+	"platforms": "*",
+	"fabrica-io" : {
+		"name": "WaterConductivity",
+		"type": 0,
+		"category": "water",
+		"libname": "DFWaterConductivity",
+		"includes": ["DFWaterConductivity"],
+		"description": "Analog water electro conductivity and temperature sensor",
+		"constructor":
+		[
+			[
+				{
+					"name": "EC_Pin",
+					"type": "int",
+					"description": "The conductivity pin",
+					"default": "36"
+				},
+				{
+					"name": "TEMP_Pin",
+					"type": "int",
+					"description": "The temperature pin",
+					"default": "39"
+				},
+				{
+					"name": "ConfigFile",
+					"type": "String",
+					"description": "DFWaterConductivity.json",
+					"default": "39"
+				}
+			]
+		]
+	}
+  }

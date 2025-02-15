@@ -19,7 +19,7 @@
 
 class DFWaterConductivity : public Sensor {
 	protected:
-		DFWaterConductivity(int EC_Pin = A0, int TEMP_Pin = A1, String ConfigFile = "DFWaterConductivity.json");
+		DFWaterConductivity(int EC_Pin = 36, int TEMP_Pin = 39, String ConfigFile = "DFWaterConductivity.json");
 		bool begin();
 		bool takeMeasurement();
 		String getConfig();
