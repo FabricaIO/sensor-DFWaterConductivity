@@ -1,5 +1,5 @@
 {
-	"name": "Fabrica-IO Sensor DF Water Conductivity",
+	"name": "sensor-DFWaterConductivity",
 	"version": "0.5.0",
 	"description": "Analog water electro conductivity and temperature sensor",
 	"keywords": "Fabrica-IO, sensor, water, analog",
