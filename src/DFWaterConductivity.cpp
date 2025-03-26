@@ -57,6 +57,7 @@ String DFWaterConductivity::getConfig() {
 	// Allocate the JSON document
 	JsonDocument doc;
 	// Assign current values
+	doc["Name"] = Description.name;
 	doc["EC_Pin"] = current_config.EC_Pin;
 	doc["Temp_Pin"] = current_config.Temp_Pin;
 	doc["ADC_Volatage_mv"] = current_config.ADC_Volatage_mv;
@@ -85,6 +86,7 @@ bool DFWaterConductivity::setConfig(String config, bool save) {
 		return false;
 	}
 	// Assign loaded values
+	Description.name = doc["Name"].as<String>();
 	current_config.EC_Pin = doc["EC_Pin"].as<int>();
 	current_config.Temp_Pin = doc["Temp_Pin"].as<int>();
 	current_config.ADC_Volatage_mv = doc["ADC_Volatage_mv"].as<float>();
