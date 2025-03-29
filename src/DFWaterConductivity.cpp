@@ -1,10 +1,11 @@
 #include "DFWaterConductivity.h"
 
 /// @brief Creates a soil moisture sensor
+/// @param Name The device name
 /// @param EC_Pin The analog pin to use for the EC probe
 /// @param Temp_Pin The analog pin to use for the temp probe
 /// @param ConfigFile The name of the configuration file to use
-DFWaterConductivity::DFWaterConductivity(int EC_Pin, int Temp_Pin, String ConfigFile) {
+DFWaterConductivity::DFWaterConductivity(String Name, int EC_Pin, int Temp_Pin, String ConfigFile) : Sensor(Name) {
 	config_path = "/settings/sen/" + ConfigFile;
 	current_config.EC_Pin = EC_Pin;
 	current_config.Temp_Pin = Temp_Pin;

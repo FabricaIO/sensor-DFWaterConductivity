@@ -4,7 +4,6 @@
  * External libraries needed:
  * ArduinoJSON: https://arduinojson.org/
  * DFRobot_EC_Pro: https://github.com/cdjq/DFRobot_ECPRO
- *
  * EC Sensor: https://www.dfrobot.com/product-2565.html
  *
  * Contributors: Sam Groveman
@@ -19,7 +18,7 @@
 
 class DFWaterConductivity : public Sensor {
 	protected:
-		DFWaterConductivity(int EC_Pin = 36, int TEMP_Pin = 39, String ConfigFile = "DFWaterConductivity.json");
+		DFWaterConductivity(String Name, int EC_Pin = 36, int TEMP_Pin = 39, String ConfigFile = "DFWaterConductivity.json");
 		bool begin();
 		bool takeMeasurement();
 		String getConfig();
