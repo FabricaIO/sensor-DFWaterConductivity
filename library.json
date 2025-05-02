@@ -48,8 +48,8 @@
 				{
 					"name": "ConfigFile",
 					"type": "String",
-					"description": "DFWaterConductivity.json",
-					"default": "39"
+					"description": "Configuration file name",
+					"default": "DFWaterConductivity.json"
 				}
 			]
 		]
