@@ -17,14 +17,14 @@
 #include <DFRobot_ECPRO.h>
 
 class DFWaterConductivity : public Sensor {
-	protected:
+	public:
 		DFWaterConductivity(String Name, int EC_Pin = 36, int TEMP_Pin = 39, String ConfigFile = "DFWaterConductivity.json");
 		bool begin();
 		bool takeMeasurement();
 		String getConfig();
 		bool setConfig(String config, bool save);
 		
-	private:
+	protected:
 		/// @brief Soil moisture sensor configuration
 		struct {
 			/// @brief The analog pin to use for the EC probe
