@@ -23,7 +23,7 @@
 	"homepage": "https://github.com/FabricaIO",
 	"frameworks": "arduino",
 	"platforms": "*",
-	"fabrica-io" : {
+	"fabricaio" : {
 		"name": "WaterConductivity",
 		"type": 0,
 		"category": "water",
