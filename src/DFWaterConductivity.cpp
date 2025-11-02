@@ -16,7 +16,6 @@ DFWaterConductivity::DFWaterConductivity(String Name, int EC_Pin, int Temp_Pin, 
 bool DFWaterConductivity::begin() {
 	Description.parameterQuantity = 1;
 	Description.type = "Water Sensor";
-	Description.name = "Elecro Conductivity";
 	Description.parameters = {"Conductivity", "Temperature"};
 	Description.units = {"uS/cm", "C"};
 	values.resize(Description.parameterQuantity);
