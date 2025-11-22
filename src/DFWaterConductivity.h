@@ -15,6 +15,7 @@
 #include <ArduinoJson.h>
 #include <DFRobot_ECPRO.h>
 
+/// @brief Device for interfacing the DF Robot water conductivity sensor
 class DFWaterConductivity : public GenericAnalogInput {
 	public:
 		DFWaterConductivity(String Name, int EC_Pin = 36, int TEMP_Pin = 39, String ConfigFile = "DFWaterConductivity.json");
